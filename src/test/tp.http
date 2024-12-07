@@ -1,0 +1,29 @@
+### Upload Tp
+POST http://localhost:8080/api/tps
+Content-Type: application/json
+
+{
+  "judul": "test",
+  "subJudul": "test",
+  "kategori": "test",
+  "deskripsi": "test",
+  "deadline": "2012-04-23T18:25:43.511Z"
+}
+
+### Update Tp
+PATCH http://localhost:8080/api/tps/2
+Content-Type: application/json
+
+{
+  "judul": "update",
+  "subJudul": "update",
+  "kategori": "update",
+  "deskripsi": "update",
+  "deadline": "2012-04-23T18:25:43.511Z"
+}
+
+### Get Tp
+GET http://localhost:8080/api/tps/2
+
+### Remove Tp
+DELETE http://localhost:8080/api/tps/1
